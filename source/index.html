@@ -20,10 +20,14 @@
               <a class="site-list__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
-          <div class="main-navigation__user-block user-navigation">
-            <a class="user-navigation__link user-navigation__search" href="#">Поиск по сайту</a>
-            <a class="user-navigation__link user-navigation__cart" href="#">Корзина: пока пуста</a>
-          </div>
+          <ul class="main-navigation__user-list navigation-list">
+            <li class="navigation-list__item">
+              <a class="navigation-list__link navigation-list__link--search" href="#">Поиск по сайту</a>
+            </li>
+            <li class="navigation-list__item">
+              <a class="navigation-list__link navigation-list__link--cart" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -61,7 +65,7 @@
         <img class="promo__image" src="https://via.placeholder.com/260x315" width="260" height="315" alt="Экологически чистая пряжа">
         <p class="promo__buy">
           <span class="promo__price">Цена: 990 руб.</span>
-          <a class="promo__buy button" href="#">Заказать</a>
+          <a class="promo__buy button" href="order.html">Заказать</a>
         </p>
       </section>
       <section class="advantages">
@@ -74,6 +78,38 @@
           <li class="advantages__item advantages__item--rocket">Поддержка отечественного производителя</li>
           <li class="advantages__item advantages__item--gift">Поставляется в подарочной упаковке</li>
         </ul>
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrapper slider">
+          <h2 class="reviews__title">Отзывы</h2>
+          <ul class="reviews__list slider__list">
+            <li class="reviews__item slider__item">
+              <blockquote class="reviews__content">
+                <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                <cite class="reviews__author-name">
+                  Анастасия Красильникова
+                  <a class="reviews__author-social" href="#">@misssssiskras</a>
+                </cite>
+              </blockquote>
+            </li>
+          </ul>
+          <p class="reviews__toggles slider__toggles">
+            <button class="reviews__toggle slider__toggle" type="button"><span class="visually-hidden">Предыдущий слайд</span></button>
+            <button class="reviews__toggle slider__toggle" type="button"><span class="visually-hidden">Следующий слайд</span></button>
+          </p>
+          <a class="reviews__button button" href="write-review.html">Написать</a>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">Контакты</h2>
+          <p class="contacts__email">e-mail:</p>
+          <a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          <p class="contacts__address">адрес:</p>
+          <address class="contacts__address-info">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address>
+        </div>
+        <img src="https://via.placeholder.com/322x457" width="322" height="457" alt="Адрес нашего магазина: ул. Большая Конюшенная 19/8, офис 101, Санкт-Петербург">
+        <a class="contacts__button button" href="writeus.html">Напишите нам</a>
       </section>
     </main>
     <footer class="page-footer">
