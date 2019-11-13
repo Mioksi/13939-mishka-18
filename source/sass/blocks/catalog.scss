@@ -1,0 +1,33 @@
+.catalog {
+  margin-bottom: 30px;
+}
+
+.catalog__list {
+  @include list-reset;
+}
+
+.catalog__image {
+  width: 260px;
+  height: 195px;
+}
+
+.catalog__link {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+
+.catalog__description {
+  font-size: 13px;
+}
+
+.catalog__price {
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+
+.catalog__svg {
+  opacity: 0.2;
+}

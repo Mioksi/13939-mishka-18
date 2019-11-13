@@ -1,0 +1,21 @@
+.form-cart {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.form-cart__list {
+  @include list-reset;
+}
+
+.form-cart__button {
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #63d1bb;
+  border: none;
+  cursor: pointer;
+}
