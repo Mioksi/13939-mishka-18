@@ -1,0 +1,40 @@
+.promo {
+  margin-bottom: 34px;
+}
+
+.promo__title {
+  margin: 0;
+
+  font-size: 25px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.promo__sub-title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #63d1bb;
+}
+
+.promo__text {
+  line-height: 24px;
+}
+
+.promo__options {
+  line-height: 20px;
+
+  border-collapse: collapse;
+}
+
+.promo__image {
+  width: 260px;
+  height: 315px;
+}
+
+.promo__price {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+}
