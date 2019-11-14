@@ -1,1 +1,56 @@
-/* stylelint-disable */
+.form-order__group {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.form-order__title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #63d1bb;
+}
+
+.form-order__list {
+  @include list-reset;
+}
+
+.form-order__input {
+  &--text::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+
+    opacity: 0.3;
+  }
+}
+
+.form-order__label {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #000000;
+}
+
+.form-order__textarea {
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+
+    opacity: 0.3;
+  }
+
+  border: 2px solid #444444;
+
+  resize: none;
+}
+
+.form-order__legend {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form-order__button {
+  line-height: 16px;
+}
