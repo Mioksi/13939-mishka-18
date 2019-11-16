@@ -38,3 +38,75 @@
   font-weight: 700;
   line-height: 24px;
 }
+
+.promo__order {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    position: relative;
+  }
+
+  .promo__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .promo__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .promo__sub-title {
+    padding-top: 10px;
+    width: 70px;
+
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .promo__image {
+    position: absolute;
+    top: 70px;
+    right: 50px;
+  }
+
+  .promo__text {
+    width: 282px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .promo__buy {
+    width: 295px;
+  }
+
+  .promo__price {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__header {
+    width: 700px;
+  }
+
+  .promo__info {
+    margin-left: 175px;
+  }
+
+  .promo__title {
+    order: 1;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .promo__image {
+    z-index: -1;
+    top: 0;
+    right: 300px;
+  }
+}

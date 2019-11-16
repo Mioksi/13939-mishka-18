@@ -1,0 +1,19 @@
+.sale-list {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .sale-list {
+    @include list-reset;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .sale-list__link {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #000000;
+  }
+}

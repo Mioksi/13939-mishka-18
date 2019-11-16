@@ -4,6 +4,7 @@
   background-color: #f9f9f9;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .category__title {
@@ -13,5 +14,21 @@
 
   font-size: 27px;
   font-weight: 700;
+  text-align: center;
   color: #010000;
+}
+
+@media (min-width: $tablet-width) {
+  .category__title {
+    font-size: 43px;
+    line-height: 50px;
+    color: #000000;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .category__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

@@ -22,3 +22,20 @@
   line-height: 20px;
   color: #000000;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__wrapper {
+    margin-left: 175px;
+  }
+}
