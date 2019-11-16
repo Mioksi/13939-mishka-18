@@ -8,3 +8,11 @@
   line-height: 24px;
   color: #000000;
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

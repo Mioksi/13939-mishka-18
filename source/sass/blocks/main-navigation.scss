@@ -2,3 +2,54 @@
   border-bottom: 1px solid #ececec;
   box-shadow: inset 0 1px 0 #ececec;
 }
+
+.main-navigation__logo {
+  margin: 0 auto;
+}
+
+.main-navigation__text {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .main-navigation__logo {
+    margin: 0;
+  }
+
+  .main-navigation__toggle {
+    display: none;
+  }
+
+  .main-navigation__list {
+    order: 2;
+  }
+
+  .main-navigation__user-list {
+    order: 1;
+  }
+
+  .main-navigation__text {
+    display: block;
+    margin: 0;
+    order: 3;
+
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation__list {
+    order: -1;
+  }
+
+  .main-navigation__user-list {
+    order: 0;
+  }
+}

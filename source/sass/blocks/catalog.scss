@@ -31,3 +31,37 @@
 .catalog__svg {
   opacity: 0.2;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog__item {
+    display: flex;
+  }
+
+  .catalog__link {
+    font-size: 20px;
+  }
+
+  .catalog__description {
+    font-size: 15px;
+  }
+
+  .catalog__price {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog__item {
+    flex-direction: column;
+    margin-right: 52px;
+  }
+
+  .catalog__item:nth-child(3n) {
+    margin-right: 0;
+  }
+}

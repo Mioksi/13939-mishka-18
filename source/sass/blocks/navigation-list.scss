@@ -12,3 +12,11 @@
 .navigation-list__svg {
   opacity: 0.2;
 }
+
+@media (min-width: $tablet-width) {
+  .navigation-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
