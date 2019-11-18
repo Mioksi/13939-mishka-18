@@ -1,24 +1,4 @@
-.video {
-  position: absolute;
-  top: 25px;
-  left: 30px;
-}
-
 .video__image {
   width: 260px;
   height: 150px;
-}
-
-@media (min-width: $tablet-width) {
-  .video {
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .video {
-    width: 682px;
-  }
 }
