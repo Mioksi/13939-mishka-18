@@ -29,3 +29,68 @@
 .reviews__button {
   font-size: 18px;
 }
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  .reviews__wrapper {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .reviews__list {
+    order: 2;
+  }
+
+  .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .reviews__author-name {
+    font-size: 18px;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+  }
+
+  .reviews__toggles {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .reviews__button {
+    order: 1;
+    margin-left: auto;
+
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    background-position-x: 50px;
+  }
+
+  .reviews__wrapper {
+    margin-left: 175px;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .reviews__author-name {
+    font-size: 17px;
+  }
+}

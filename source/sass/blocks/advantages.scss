@@ -21,6 +21,26 @@
   font-weight: 700;
   line-height: 20px;
   color: #000000;
+
+  &--price {
+    order: 2;
+  }
+
+  &--heart {
+    order: 4;
+  }
+
+  &--yarn {
+    order: 1;
+  }
+
+  &--rocket {
+    order: 3;
+  }
+
+  &--gift {
+    order: 5;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -31,11 +51,23 @@
 
   .advantages__item {
     width: 300px;
+
+    font-size: 20px;
+  }
+
+  .advantages__title {
+    font-size: 43px;
+    line-height: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages__wrapper {
     margin-left: 175px;
+  }
+
+  .advantages__title {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
