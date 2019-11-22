@@ -1,10 +1,25 @@
 .button {
+  display: block;
+  padding: 14px 30px;
+
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
+  text-align: center;
   text-transform: uppercase;
   color: #444444;
 
   border: 2px solid #444444;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+
+    background-color: #444444;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
 }

@@ -1,3 +1,32 @@
 .social__list {
   @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.social__item {
+  margin-right: 41px;
+}
+
+.social__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.social__link {
+  &:hover .social__icon-path,
+  &:focus .social__icon-path {
+    fill: #46c1ae;
+  }
+
+  &:active .social__icon-path {
+    fill: rgba(#46c1ae, 0.3);
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .social__list {
+    width: 148px;
+  }
 }

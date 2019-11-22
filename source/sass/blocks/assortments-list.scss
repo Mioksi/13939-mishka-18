@@ -1,0 +1,114 @@
+.assortments-list {
+  @include list-reset;
+}
+
+.assortments-list__item {
+  position: relative;
+}
+
+.assortments-list__icon {
+  position: absolute;
+  bottom: 18px;
+
+  fill: #149080;
+  opacity: 0.5;
+
+  &--interior {
+    bottom: 18px;
+    right: 36px;
+  }
+
+  &--toy {
+    bottom: 23px;
+    right: 27px;
+  }
+}
+
+.assortments-list__link {
+  display: block;
+  padding-top: 25px;
+  padding-right: 175px;
+  padding-bottom: 30px;
+  padding-left: 29px;
+
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+
+  background-color: #63d1bb;
+
+  &--interior {
+    &:hover,
+    &:focus {
+      background-color: #59d5bc;
+    }
+  }
+
+  &--toy {
+    background-color: #56c3b2;
+
+    &:hover,
+    &:focus {
+      background-color: #46c1ae;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    transform: translateY(-5px);
+  }
+
+  &:hover .assortments-list__icon {
+    opacity: 0.7;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
+
+  &:active .assortments-list__icon {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .assortments-list {
+    display: flex;
+  }
+
+  .assortments-list__item {
+    width: 334px;
+  }
+
+  .assortments-list__link {
+    padding-top: 28px;
+    padding-right: 180px;
+    padding-bottom: 30px;
+    padding-left: 35px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .assortments-list__icon {
+    &--interior {
+      bottom: 26px;
+    }
+
+    &--toy {
+      bottom: 26px;
+      right: 34px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .assortments-list__item {
+    width: 525px;
+  }
+
+  .assortments-list__link {
+    padding-right: 370px;
+  }
+}
