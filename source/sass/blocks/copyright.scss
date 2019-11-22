@@ -1,6 +1,25 @@
-.copyright__text {
+.copyright__link {
   font-size: 19px;
   font-weight: 700;
   line-height: 18px;
   color: #000000;
+
+  &:hover .copyright__icon-path,
+  &:focus .copyright__icon-path {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    color: rgba(#000000, 0.3);
+  }
+
+  &:active .copyright__icon-path {
+    fill: rgba(#46c1ae, 0.3);
+  }
+}
+
+.copyright__icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 30px;
 }

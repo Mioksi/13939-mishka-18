@@ -1,5 +1,21 @@
 .promo {
-  margin-bottom: 34px;
+  position: relative;
+
+  padding-bottom: 42px;
+  margin-bottom: 27px;
+
+  &::after {
+    @include pseudo;
+
+    bottom: 0;
+    right: 0;
+
+    width: 100%;
+    height: 6px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: 100% 6px;
+  }
 }
 
 .promo__title {
@@ -18,39 +34,75 @@
   color: #63d1bb;
 }
 
+.promo__header {
+  margin-bottom: 18px;
+}
+
 .promo__text {
+  margin: 0;
+  margin-bottom: 18px;
+
   line-height: 24px;
 }
 
 .promo__options {
+  margin-bottom: 28px;
+  width: 100%;
+
   line-height: 20px;
 
   border-collapse: collapse;
 }
 
+.promo__field,
+.promo__value {
+  padding: 0;
+  padding-top: 9px;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #ececec;
+}
+
+.promo__value {
+  padding-left: 15px;
+}
+
 .promo__image {
+  margin-bottom: 15px;
   width: 260px;
   height: 315px;
 }
 
+.promo__buy {
+  margin: 0;
+}
+
 .promo__price {
+  display: block;
+  margin-bottom: 26px;
+
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
-}
-
-.promo__order {
-  display: block;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .promo {
-    position: relative;
+    padding-bottom: 70px;
+    margin-bottom: 48px;
+
+    &::after {
+      height: 17px;
+
+      background-size: 100% 17px;
+    }
   }
 
   .promo__header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 49px;
   }
 
   .promo__title {
@@ -59,36 +111,64 @@
   }
 
   .promo__subtitle {
-    padding-top: 10px;
-    width: 70px;
+    margin-right: 25px;
+    padding-top: 11px;
+    width: 75px;
 
     line-height: 17px;
     text-align: center;
   }
 
-  .promo__image {
-    position: absolute;
-    top: 70px;
-    right: 50px;
+  .promo__info {
+    width: 291px;
   }
 
   .promo__text {
+    margin-bottom: 36px;
     width: 282px;
 
     font-size: 17px;
     line-height: 30px;
   }
 
-  .promo__buy {
-    width: 295px;
+  .promo__options {
+    margin-bottom: 56px;
+  }
+
+  .promo__value {
+    padding-left: 0;
+  }
+
+  .promo__image {
+    position: absolute;
+    top: 70px;
+    right: 50px;
+
+    margin: 0;
   }
 
   .promo__price {
+    margin-bottom: 34px;
+
     font-size: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .promo {
+    padding-bottom: 95px;
+    margin-bottom: 60px;
+
+    &::after {
+      right: 50px;
+
+      width: 1050px;
+      height: 23px;
+
+      background-size: auto;
+    }
+  }
+
   .promo__header {
     width: 700px;
   }
@@ -102,6 +182,20 @@
 
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .promo__subtitle {
+    margin-right: 0;
+    margin-left: 44px;
+    padding-top: 14px;
+  }
+
+  .promo__text {
+    margin-bottom: 47px;
+  }
+
+  .promo__options {
+    margin-bottom: 110px;
   }
 
   .promo__image {
