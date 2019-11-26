@@ -1,3 +1,35 @@
+.slider__toggles {
+  display: flex;
+}
+
 .slider__toggle {
+  padding-top: 12px;
+  padding-right: 42px;
+  padding-bottom: 9px;
+  padding-left: 37px;
+
   border: 1px solid #ececec;
+  background-color: transparent;
+
+  &--left {
+    border-right: none;
+  }
+
+  &:hover .slider__arrow,
+  &:focus .slider__arrow {
+    opacity: 0.6;
+  }
+
+  &:active .slider__arrow {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider__toggle {
+    padding-right: 17px;
+    padding-left: 20px;
+
+    border: none;
+  }
 }

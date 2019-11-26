@@ -1,5 +1,14 @@
+.production {
+  margin-bottom: 57px;
+}
+
 .production__title {
+  position: relative;
+
   margin: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 89px;
 
   font-size: 17px;
   font-weight: 700;
@@ -7,44 +16,96 @@
   color: #000000;
 
   border: 1px solid #ececec;
+  border-bottom: none;
+
+  &::after {
+    @include pseudo;
+
+    top: 30px;
+    left: 33px;
+
+    width: 32px;
+    height: 32px;
+
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.production__video {
+  line-height: 0;
 }
 
 .production__info {
+  padding: 33px;
+  padding-top: 27px;
+
   border: 1px solid #ececec;
+  border-top: none;
 }
 
 .production__text {
   margin: 0;
+  margin-bottom: 25px;
 
   font-size: 13px;
   line-height: 24px;
 }
 
 .production__button {
+  padding-top: 16px;
+  padding-right: 23px;
+  padding-bottom: 16px;
+  padding-left: 21px;
+
   line-height: 16px;
+}
+
+.production__wrapper:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.production__wrapper:active {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: $tablet-width) {
   .production {
+    margin-bottom: 63px;
+  }
+
+  .production__wrapper {
     display: flex;
     flex-direction: column;
   }
 
-  .production__wrapper {
+  .production__video {
     order: -1;
   }
 
-  .production__title {
-    font-size: 20px;
-
-    border-bottom: none;
+  .production__info {
+    padding-top: 8px;
+    padding-right: 41px;
+    padding-bottom: 45px;
+    padding-left: 39px;
   }
 
-  .production__info {
-    border-top: none;
+  .production__title {
+    padding-top: 37px;
+    padding-left: 105px;
+
+    font-size: 20px;
+
+    &::after {
+      top: 32px;
+      left: 41px;
+    }
   }
 
   .production__text {
+    margin-bottom: 35px;
+
     font-size: 15px;
     line-height: 30px;
   }
@@ -52,18 +113,45 @@
 
 @media (min-width: $desktop-width) {
   .production {
-    position: relative;
+    margin-bottom: 105px;
   }
 
   .production__wrapper {
+    position: relative;
+  }
+
+  .production__video.video {
     position: absolute;
     top: 0;
-    left: 50px;
+    left: 0;
   }
 
   .production__title,
   .production__info {
     margin-left: auto;
+    padding-left: 76px;
     width: 367px;
+  }
+
+  .production__info {
+    padding-bottom: 59px;
+  }
+
+  .production__title {
+    padding-top: 95px;
+    padding-right: 55px;
+
+    &::after {
+      top: 41px;
+      left: 78px;
+    }
+  }
+
+  .production__text {
+    margin-bottom: 47px;
+  }
+
+  .production__button {
+    width: 230px;
   }
 }

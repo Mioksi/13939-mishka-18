@@ -14,8 +14,12 @@
     height: 6px;
 
     background-image: url("../img/bg-zigzag-line.svg");
-    background-size: 100% 6px;
+    background-size: contain;
   }
+}
+
+.promo__wrapper {
+  position: relative;
 }
 
 .promo__title {
@@ -141,10 +145,12 @@
 
   .promo__image {
     position: absolute;
-    top: 70px;
-    right: 50px;
+    top: 107px;
+    right: 51px;
 
     margin: 0;
+    width: 333px;
+    height: 404px;
   }
 
   .promo__price {
@@ -160,7 +166,8 @@
     margin-bottom: 60px;
 
     &::after {
-      right: 50px;
+      right: 50%;
+      transform: translateX(50%);
 
       width: 1050px;
       height: 23px;
@@ -200,7 +207,10 @@
 
   .promo__image {
     z-index: -1;
-    top: 0;
-    right: 300px;
+    top: -53px;
+    right: 50px;
+
+    width: 525px;
+    height: 636px;
   }
 }
