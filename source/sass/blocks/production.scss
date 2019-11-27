@@ -2,6 +2,10 @@
   margin-bottom: 57px;
 }
 
+.production__wrapper {
+  position: relative;
+}
+
 .production__title {
   position: relative;
 
@@ -116,11 +120,7 @@
     margin-bottom: 105px;
   }
 
-  .production__wrapper {
-    position: relative;
-  }
-
-  .production__video.video {
+  .production__video {
     position: absolute;
     top: 0;
     left: 0;

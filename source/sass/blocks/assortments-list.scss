@@ -27,6 +27,12 @@
 .assortments-list__link {
   position: relative;
 
+  &::before {
+    @include svg-ie;
+
+    z-index: 1;
+  }
+
   display: block;
   padding-top: 25px;
   padding-right: 175px;

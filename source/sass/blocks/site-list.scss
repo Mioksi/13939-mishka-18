@@ -1,9 +1,9 @@
-.site-list {
-  @include list-reset;
-}
-
 .site-list__item {
   border-bottom: 1px solid #ececec;
+
+  &--sale {
+    display: none;
+  }
 }
 
 .site-list__link {
@@ -57,8 +57,7 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    width: auto;
-    background-color: #ffffff;
+    width: 410px;
   }
 
   .site-list__item {
@@ -67,6 +66,12 @@
 
     &--decor {
       border-right: none;
+    }
+
+    &--sale {
+      display: block;
+      margin-bottom: -56px;
+      margin-right: 59px;
     }
   }
 
@@ -79,6 +84,14 @@
 
     &--desktop {
       padding-left: 34px;
+    }
+
+    &--sale {
+      padding-top: 16px;
+      padding-right: 0;
+      padding-bottom: 16px;
+
+      font-size: 15px;
     }
   }
 }

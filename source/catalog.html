@@ -16,15 +16,21 @@
             </a>
           </div>
           <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-navigation__list site-list">
+          <ul class="main-navigation__list main-navigation__list--site-list site-list">
             <li class="site-list__item">
               <a class="site-list__link">Каталог товаров</a>
             </li>
             <li class="site-list__item site-list__item--decor">
               <a class="site-list__link site-list__link--desktop" href="form.html">Вязание на заказ</a>
             </li>
+            <li class="site-list__item site-list__item--decor site-list__item--sale">
+              <a class="site-list__link site-list__link--sale" href="#">Новый поступления</a>
+            </li>
+            <li class="site-list__item site-list__item--decor site-list__item--sale">
+              <a class="site-list__link site-list__link--sale" href="#">Распродажа</a>
+            </li>
           </ul>
-          <ul class="main-navigation__list user-list">
+          <ul class="main-navigation__list main-navigation__list--user-list user-list">
             <li class="user-list__item">
               <a class="user-list__link user-list__link--search" href="#">
                 <svg class="user-list__icon user-list__icon--search" xmlns="http://www.w3.org/2000/svg" width="17.6" height="17.6" viewBox="-0.8 -0.8 17.6 17.6">
@@ -42,20 +48,16 @@
               </a>
             </li>
           </ul>
-          <ul class="main-navigation__list sale-list">
-            <li class="sale-list__item">
-              <a class="sale-list__link" href="#">Новый поступления</a>
-            </li>
-            <li class="sale-list__item">
-              <a class="sale-list__link" href="#">Распродажа</a>
-            </li>
-          </ul>
-          <p class="main-navigation__text main-navigation__text">Бесплатная доставка по России</p>
+          <p class="main-navigation__text">Бесплатная доставка по России</p>
         </div>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Каталог товаров</h1>
+      <div class="page-main__wrapper">
+        <div class="container">
+          <h1 class="page-main__title">Каталог товаров</h1>
+        </div>
+      </div>
       <section class="catalog container">
         <h2 class="visually-hidden">Ассортимент товаров</h2>
         <ul class="catalog__list">

@@ -98,7 +98,6 @@
 
   .contacts__wrapper {
     position: relative;
-    padding: 0 50px;
 
     &::after {
       @include pseudo;
@@ -180,6 +179,7 @@
 
   .contacts__wrapper {
     padding-left: 225px;
+    padding-right: 50px;
 
     &::after {
       top: 63px;

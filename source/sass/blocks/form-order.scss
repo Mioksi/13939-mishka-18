@@ -79,6 +79,9 @@
 }
 
 .form-order__input {
+  appearance: none;
+  border-radius: 0;
+
   + .form-order__label--radio::before {
     @include pseudo;
 
@@ -257,24 +260,14 @@
 
 @media (min-width: $tablet-width) {
   .form-order__group {
-    margin-bottom: 26px;
+    margin: 0;
+    padding-top: 51px;
+    padding-bottom: 26px;
 
     &--background {
       padding-top: 50px;
       padding-bottom: 26px;
       background-color: #f1f1f1;
-    }
-
-    &--color {
-      margin-bottom: 50px;
-    }
-
-    &--contacts {
-      margin-bottom: 51px;
-    }
-
-    &--add {
-      margin-bottom: 44px;
     }
   }
 
@@ -441,6 +434,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    padding-top: 17px;
   }
 
   .form-order__legend {
@@ -459,12 +453,6 @@
 @media (min-width: $desktop-width) {
   .form-order__wrapper {
     padding-left: 112px;
-  }
-
-  .form-order__group {
-    &--add {
-      margin-bottom: 39px;
-    }
   }
 
   .form-order__list {

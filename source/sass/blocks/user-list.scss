@@ -9,6 +9,12 @@
 .user-list__link {
   position: relative;
 
+  &::before {
+    @include svg-ie;
+
+    z-index: 1;
+  }
+
   display: block;
   padding-top: 26px;
   padding-right: 56px;

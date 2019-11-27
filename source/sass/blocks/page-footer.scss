@@ -35,8 +35,14 @@
   }
 
   .page-footer__logo {
+    position: relative;
+
     display: block;
     margin-right: 159px;
+
+    &::before {
+      @include svg-ie;
+    }
 
     &[href]:hover .page-footer__logo-img,
     &[href]:focus .page-footer__logo-img {
