@@ -1,5 +1,5 @@
 .catalog {
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .catalog__list {
@@ -7,12 +7,21 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    margin-top: 69px;
+  }
+
   .catalog__item {
     margin-bottom: 54px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    margin-top: 113px;
+    margin-bottom: 2px;
+  }
+
   .catalog__list {
     display: flex;
     flex-wrap: wrap;

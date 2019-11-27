@@ -41,7 +41,7 @@
       height: 24px;
 
       background-image: url("../img/bg-zigzag-fill.svg");
-      background-size: 100% 24px;
+      background-size: contain;
     }
   }
 
@@ -50,7 +50,7 @@
   }
 
   .category__title {
-    padding-top: 112px;
+    padding-top: 153px;
     padding-bottom: 373px;
 
     font-size: 43px;
@@ -73,7 +73,7 @@
   }
 
   .category__title {
-    padding-top: 97px;
+    padding-top: 151px;
     padding-bottom: 359px;
 
     font-size: 53px;

@@ -1,5 +1,5 @@
 .page-footer {
-  padding-top: 27px;
+  padding-top: 24px;
   padding-bottom: 23px;
 
   background-color: #f1f1f1;
@@ -10,9 +10,9 @@
 }
 
 .page-footer__social {
-  margin-bottom: 22px;
+  margin-bottom: 21px;
   padding-right: 55px;
-  padding-bottom: 27px;
+  padding-bottom: 19px;
   padding-left: 57px;
 
   border-bottom: 1px solid #e5e5e5;
@@ -24,8 +24,8 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    padding-top: 51px;
-    padding-bottom: 51px;
+    padding-top: 50px;
+    padding-bottom: 47px;
   }
 
   .page-footer__wrapper {
@@ -35,8 +35,14 @@
   }
 
   .page-footer__logo {
+    position: relative;
+
     display: block;
     margin-right: 159px;
+
+    &::before {
+      @include svg-ie;
+    }
 
     &[href]:hover .page-footer__logo-img,
     &[href]:focus .page-footer__logo-img {
@@ -51,16 +57,18 @@
   .page-footer__social {
     margin: 0;
     padding: 0;
+    padding-top: 9px;
     border-bottom: none;
   }
 
   .page-footer__copyright {
     margin-left: auto;
+    padding-top: 2px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer__logo {
-    margin-right: 349px;
+    margin-right: 350px;
   }
 }

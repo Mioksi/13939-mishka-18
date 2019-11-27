@@ -15,6 +15,15 @@
 }
 
 .social__link {
+  display: inline-block;
+  vertical-align: top;
+
+  position: relative;
+
+  &::before {
+    @include svg-ie;
+  }
+
   &:hover .social__icon-path,
   &:focus .social__icon-path {
     fill: #46c1ae;

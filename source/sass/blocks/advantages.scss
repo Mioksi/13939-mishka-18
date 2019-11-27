@@ -104,6 +104,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .advantages {
+    margin-bottom: 28px;
+  }
+
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
@@ -145,6 +149,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .advantages {
+    margin-bottom: 35px;
+  }
+
   .advantages__wrapper {
     margin-left: 175px;
   }

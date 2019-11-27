@@ -1,27 +1,25 @@
-.page-main__title {
-  margin: 0;
-  margin-bottom: 30px;
+.page-main__wrapper {
   padding-top: 70px;
   padding-bottom: 76px;
+
+  background-color: #f1f1f1;
+}
+
+.page-main__title {
+  margin: 0;
 
   font-size: 27px;
   font-weight: 700;
   text-align: center;
   color: #000000;
-
-  background-color: #f1f1f1;
 }
 
 @media (min-width: $tablet-width) {
-  .page-main__title {
+  .page-main__wrapper {
     position: relative;
 
-    margin-bottom: 69px;
-    padding-top: 41px;
-    padding-bottom: 89px;
-
-    font-size: 43px;
-    line-height: 50px;
+    padding-top: 95px;
+    padding-bottom: 90px;
 
     &::after {
       @include pseudo;
@@ -35,19 +33,26 @@
       background-image: url("../img/bg-zigzag-fill.svg");
     }
   }
+
+  .page-main__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
-@media (min-width: $desktop-width) {
-  .page-main__title {
-    margin-bottom: 113px;
-    padding-top: 38px;
-    padding-bottom: 118px;
 
-    font-size: 53px;
-    line-height: 57px;
+@media (min-width: $desktop-width) {
+  .page-main__wrapper {
+    padding-top: 91px;
+    padding-bottom: 119px;
 
     &::after {
       height: 34px;
     }
+  }
+
+  .page-main__title {
+    font-size: 53px;
+    line-height: 57px;
   }
 }

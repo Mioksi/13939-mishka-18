@@ -1,9 +1,29 @@
+.order {
+  margin-bottom: 55px;
+}
+
+.order__wrapper {
+  margin-top: 22px;
+  margin-bottom: 24px;
+}
+
 .order__text {
+  margin: 0;
+
   font-size: 13px;
   line-height: 24px;
 }
 
 @media (min-width: $tablet-width) {
+  .order {
+    margin-bottom: 50px;
+  }
+
+  .order__wrapper {
+    margin-top: 62px;
+    margin-bottom: 4px;
+  }
+
   .order__text {
     font-size: 17px;
     line-height: 30px;
@@ -11,6 +31,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .order__wrapper {
+    margin-top: 106px;
+  }
+
   .order__text {
     padding-left: 175px;
     padding-right: 200px;

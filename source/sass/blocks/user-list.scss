@@ -9,11 +9,17 @@
 .user-list__link {
   position: relative;
 
+  &::before {
+    @include svg-ie;
+
+    z-index: 1;
+  }
+
   display: block;
   padding-top: 26px;
-  padding-right: 26px;
+  padding-right: 56px;
   padding-bottom: 28px;
-  padding-left: 45px;
+  padding-left: 75px;
 
   font-size: 17px;
   font-weight: 700;
@@ -44,12 +50,12 @@
 
   &--search {
     top: 31px;
-    left: 2px;
+    left: 32px;
   }
 
   &--cart {
     top: 29px;
-    left: 0;
+    left: 30px;
   }
 }
 
@@ -74,19 +80,19 @@
   }
 
   .user-list__link {
-    padding-top: 36px;
-
     &--search {
-      padding-bottom: 13px;
-      padding-right: 31px;
-      padding-left: 31px;
+      padding-top: 36px;
+      padding-right: 32px;
+      padding-bottom: 22px;
+      padding-left: 32px;
 
       font-size: 0;
     }
 
     &--cart {
-      padding-bottom: 19px;
-      padding-right: 50px;
+      padding-top: 31px;
+      padding-right: 0;
+      padding-bottom: 33px;
       padding-left: 83px;
     }
   }
@@ -101,7 +107,7 @@
 
     &--cart {
       top: 34px;
-      left: 58px;
+      left: 31px;
     }
   }
 }

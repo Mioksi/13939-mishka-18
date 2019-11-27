@@ -25,6 +25,14 @@
 }
 
 .assortments-list__link {
+  position: relative;
+
+  &::before {
+    @include svg-ie;
+
+    z-index: 1;
+  }
+
   display: block;
   padding-top: 25px;
   padding-right: 175px;
@@ -38,9 +46,20 @@
 
   background-color: #63d1bb;
 
+  &:hover::after {
+    @include pseudo;
+
+    bottom: -5px;
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 5px;
+  }
+
   &--interior {
-    &:hover,
-    &:focus {
+    &:hover::after,
+    &:focus::after {
       background-color: #59d5bc;
     }
   }
@@ -48,8 +67,8 @@
   &--toy {
     background-color: #56c3b2;
 
-    &:hover,
-    &:focus {
+    &:hover::after,
+    &:focus::after {
       background-color: #46c1ae;
     }
   }

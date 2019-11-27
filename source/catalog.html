@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-navigation main-navigation--opened">
+      <nav class="main-navigation main-navigation--closed">
         <div class="main-navigation__wrapper container">
           <div class="main-navigation__logo logo">
             <a class="logo__link" href="index.html" aria-label="Главная страница">
@@ -16,16 +16,22 @@
             </a>
           </div>
           <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-navigation__list site-list site-list">
-            <li class="main-navigation__item site-list__item">
+          <ul class="main-navigation__list main-navigation__list--site-list site-list">
+            <li class="site-list__item">
               <a class="site-list__link">Каталог товаров</a>
             </li>
-            <li class="main-navigation__item site-list__item site-list__item--decor">
+            <li class="site-list__item site-list__item--decor">
               <a class="site-list__link site-list__link--desktop" href="form.html">Вязание на заказ</a>
             </li>
+            <li class="site-list__item site-list__item--decor site-list__item--sale">
+              <a class="site-list__link site-list__link--sale" href="#">Новый поступления</a>
+            </li>
+            <li class="site-list__item site-list__item--decor site-list__item--sale">
+              <a class="site-list__link site-list__link--sale" href="#">Распродажа</a>
+            </li>
           </ul>
-          <ul class="main-navigation__user-list user-list">
-            <li class="main-navigation__item user-list__item">
+          <ul class="main-navigation__list main-navigation__list--user-list user-list">
+            <li class="user-list__item">
               <a class="user-list__link user-list__link--search" href="#">
                 <svg class="user-list__icon user-list__icon--search" xmlns="http://www.w3.org/2000/svg" width="17.6" height="17.6" viewBox="-0.8 -0.8 17.6 17.6">
                   <path class="user-list__icon-path" fill="#231f20" d="M16.47 14.93l-3.415-3.415A7.67 7.67 0 0014.6 6.899C14.6 2.646 11.153-.8 6.9-.8S-.8 2.646-.8 6.899s3.446 7.7 7.699 7.7c1.734 0 3.326-.58 4.613-1.546l3.417 3.416c.203.202.418.33.771.33a1.1 1.1 0 001.1-1.1c0-.24-.061-.499-.33-.769zM1.399 6.899a5.5 5.5 0 1111 0c0 3.038-2.462 5.5-5.5 5.5s-5.5-2.461-5.5-5.5z"/>
@@ -33,7 +39,7 @@
                 Поиск по сайту
               </a>
             </li>
-            <li class=" main-navigation__item user-list__item user-list__item--decor">
+            <li class="user-list__item user-list__item--decor">
               <a class="user-list__link user-list__link--cart" href="#">
                 <svg class="user-list__icon user-list__icon--cart" xmlns="http://www.w3.org/2000/svg" width="20.294" height="18.849" viewBox="264.205 370.961 20.294 18.849">
                   <path class="user-list__icon-path" fill="#231f20" d="M283.75 378.19h-3.151l-3.407-6.814a.75.75 0 10-1.341.671l3.071 6.143h-9.138l3.072-6.143a.75.75 0 00-1.341-.671l-3.407 6.814h-3.151a.75.75 0 000 1.5h.157l.855 2.991a.737.737 0 00-.316.595c0 .396.309.71.697.739l1.656 5.795h12.697l1.656-5.795a.745.745 0 00.698-.739.738.738 0 00-.316-.596l.854-2.991h.157a.75.75 0 10-.002-1.499zm-4.181 10.121h-10.433l-1.224-4.284h12.881l-1.224 4.284zm1.653-5.785h-13.739l-.81-2.836h15.359l-.81 2.836z"/>
@@ -42,20 +48,16 @@
               </a>
             </li>
           </ul>
-          <ul class="main-navigation__sale-list sale-list sale-list">
-            <li class="sale-list__item">
-              <a class="sale-list__link" href="#">Новый поступления</a>
-            </li>
-            <li class="sale-list__item">
-              <a class="sale-list__link" href="#">Распродажа</a>
-            </li>
-          </ul>
-          <p class="main-navigation__text main-navigation__text">Бесплатная доставка по России</p>
+          <p class="main-navigation__text">Бесплатная доставка по России</p>
         </div>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Каталог товаров</h1>
+      <div class="page-main__wrapper">
+        <div class="container">
+          <h1 class="page-main__title">Каталог товаров</h1>
+        </div>
+      </div>
       <section class="catalog container">
         <h2 class="visually-hidden">Ассортимент товаров</h2>
         <ul class="catalog__list">
@@ -105,7 +107,7 @@
             </a>
             <div class="catalog-item__info">
               <h3 class="catalog-item__title">
-                <a class="catalog-item__link" href="#">Большая корзинка для игрушек</a>
+                <a class="catalog-item__link" href="#">Большая корзинка для&nbsp;игрушек</a>
               </h3>
               <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
               <p class="catalog-item__buy">
@@ -122,16 +124,18 @@
         </ul>
       </section>
       <section class="production container">
-        <h2 class="production__title">Процесс производства</h2>
-        <div class="production__wrapper video">
-          <img class="video__preview" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Процесс производства">
-          <button class="video__control" type="button">
-            <span class="visually-hidden">Посмотреть видео</span>
-          </button>
-        </div>
-        <div class="production__info">
-          <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <a class="production__button button" href="form.html">Сделать заказ</a>
+        <div class="production__wrapper">
+          <h2 class="production__title">Процесс производства</h2>
+          <div class="production__video video">
+            <img class="video__preview" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Процесс производства">
+            <button class="video__control" type="button">
+              <span class="visually-hidden">Посмотреть видео</span>
+            </button>
+          </div>
+          <div class="production__info">
+            <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a class="production__button button" href="form.html">Сделать заказ</a>
+          </div>
         </div>
       </section>
     </main>
