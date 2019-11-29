@@ -219,25 +219,28 @@
       </div>
     </footer>
     <section class="modal-cart">
-      <h2 class="modal-cart__title">Добавить в корзину</h2>
-      <p class="modal-cart__text">Выберите размер:</p>
-      <form class="modal-cart__form form-cart" action="https://echo.htmlacademy.ru" method="post">
-        <ul class="form-cart__list">
-          <li class="form-cart__item">
-            <input class="form-cart__input visually-hidden" type="checkbox" name="size" value="s" id="s-field" checked>
-            <label class="form-cart__label form-cart__label--checkbox" for="s-field">S</label>
-          </li>
-          <li class="form-cart__item">
-            <input class="form-cart__input visually-hidden" type="checkbox" name="size" value="m" id="m-field">
-            <label class="form-cart__label form-cart__label--checkbox" for="m-field">M</label>
-          </li>
-          <li class="form-cart__item">
-            <input class="form-cart__input visually-hidden" type="checkbox" name="size" value="l" id="l-field">
-            <label class="form-cart__label form-cart__label--checkbox" for="l-field">L</label>
-          </li>
-        </ul>
-        <button class="form-cart__button" type="submit">Добавить</button>
-      </form>
+      <div class="modal-cart__overlay"></div>
+      <div class="modal-cart__wrapper">
+        <h2 class="modal-cart__title">Добавить в корзину</h2>
+        <p class="modal-cart__text">Выберите размер:</p>
+        <form class="modal-cart__form form-cart" action="https://echo.htmlacademy.ru" method="post">
+          <ul class="form-cart__list">
+            <li class="form-cart__item">
+              <input class="form-cart__input visually-hidden" type="checkbox" name="size" value="s" id="s-field" checked>
+              <label class="form-cart__label form-cart__label--checkbox" for="s-field">S</label>
+            </li>
+            <li class="form-cart__item">
+              <input class="form-cart__input visually-hidden" type="checkbox" name="size" value="m" id="m-field">
+              <label class="form-cart__label form-cart__label--checkbox" for="m-field">M</label>
+            </li>
+            <li class="form-cart__item">
+              <input class="form-cart__input visually-hidden" type="checkbox" name="size" value="l" id="l-field">
+              <label class="form-cart__label form-cart__label--checkbox" for="l-field">L</label>
+            </li>
+          </ul>
+          <button class="form-cart__button" type="submit">Добавить</button>
+        </form>
+      </div>
     </section>
   </body>
 </html>
