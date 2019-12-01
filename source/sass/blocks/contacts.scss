@@ -98,6 +98,10 @@
     background-position: 0 0;
     background-repeat: no-repeat;
   }
+
+  &--hide {
+    display: none;
+  }
 }
 
 .contacts__button {
