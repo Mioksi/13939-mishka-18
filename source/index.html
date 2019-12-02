@@ -174,8 +174,14 @@
               <address class="contacts__address">г. Санкт-Петербург,<br> ул. Большая Конюшенная, д.&nbsp;19/8, офис 101</address>
             </div>
           </div>
-          <div class="contacts__map">
-            <img class="contacts__image" src="img/map-mobile@1x.jpg" width="322" height="457" alt="Адрес нашего магазина: ул. Большая Конюшенная 19/8, офис 101, Санкт-Петербург">
+          <div class="contacts__map" id="yandexmap">
+            <div class="contacts__map-wrapper">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+                <img class="contacts__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Адрес нашего магазина: ул. Большая Конюшенная 19/8, офис 101, Санкт-Петербург">
+              </picture>
+            </div>
           </div>
           <a class="contacts__button button" href="writeus.html">Напишите нам</a>
         </div>
@@ -250,6 +256,8 @@
         </form>
       </div>
     </section>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=5dd7b717-6791-493e-bfca-36f7bec94721&lang=ru_RU"></script>
     <script src="js/picturefill.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
