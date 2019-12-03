@@ -44,14 +44,18 @@
       @include svg-ie;
     }
 
-    &[href]:hover .page-footer__logo-img,
-    &[href]:focus .page-footer__logo-img {
+    &[href]:hover .page-footer__logo-image,
+    &[href]:focus .page-footer__logo-image {
       fill: #46c1ae;
     }
 
-    &[href]:active .page-footer__logo-img {
+    &[href]:active .page-footer__logo-image {
       fill: rgba(#46c1ae, 0.3);
     }
+  }
+
+  .page-footer__logo-image {
+    fill: #231f20;
   }
 
   .page-footer__social {
