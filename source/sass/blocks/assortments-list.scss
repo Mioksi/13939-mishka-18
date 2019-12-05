@@ -2,28 +2,6 @@
   @include list-reset;
 }
 
-.assortments-list__item {
-  position: relative;
-}
-
-.assortments-list__icon {
-  position: absolute;
-  bottom: 18px;
-
-  fill: #149080;
-  opacity: 0.5;
-
-  &--interior {
-    bottom: 18px;
-    right: 36px;
-  }
-
-  &--toy {
-    bottom: 23px;
-    right: 27px;
-  }
-}
-
 .assortments-list__link {
   position: relative;
 
@@ -35,7 +13,6 @@
 
   display: block;
   padding-top: 25px;
-  padding-right: 175px;
   padding-bottom: 30px;
   padding-left: 29px;
 
@@ -91,18 +68,40 @@
   }
 }
 
+.assortments-list__icon {
+  position: absolute;
+  bottom: 18px;
+
+  fill: #149080;
+  opacity: 0.5;
+
+  &--interior {
+    bottom: 18px;
+    right: 36px;
+  }
+
+  &--toy {
+    bottom: 23px;
+    right: 27px;
+  }
+}
+
+.assortments-list__title {
+  display: block;
+  max-width: 170px;
+}
+
 @media (min-width: $tablet-width) {
   .assortments-list {
     display: flex;
   }
 
   .assortments-list__item {
-    width: 334px;
+    width: 50%;
   }
 
   .assortments-list__link {
     padding-top: 28px;
-    padding-right: 180px;
     padding-bottom: 30px;
     padding-left: 35px;
 

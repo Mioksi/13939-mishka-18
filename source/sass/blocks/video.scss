@@ -46,6 +46,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .video {
+    width: 682px;
+    height: 455px;
+  }
+
   .video__control {
     top: 190px;
     left: 291px;

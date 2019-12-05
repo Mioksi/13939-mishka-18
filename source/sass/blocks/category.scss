@@ -13,21 +13,22 @@
   }
 }
 
+.category__wrapper {
+  padding: 0;
+}
+
 .category__title {
   margin: 0;
   padding-top: 71px;
   padding-right: 30px;
   padding-bottom: 121px;
   padding-left: 30px;
+  min-height: 282px;
 
   font-size: 27px;
   font-weight: 700;
   text-align: center;
   color: #010000;
-}
-
-.category__wrapper {
-  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -65,6 +66,7 @@
   .category__title {
     padding-top: 153px;
     padding-bottom: 373px;
+    min-height: 626px;
 
     font-size: 43px;
     line-height: 50px;
@@ -94,6 +96,7 @@
   .category__title {
     padding-top: 151px;
     padding-bottom: 359px;
+    min-height: 0;
 
     font-size: 53px;
     line-height: 57px;

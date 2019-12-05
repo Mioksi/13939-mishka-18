@@ -122,7 +122,8 @@
 
   .advantages__item {
     margin-bottom: 58px;
-    width: 334px;
+    padding-right: 25px;
+    width: 50%;
 
     font-size: 20px;
 
@@ -132,10 +133,6 @@
 
     &--heart {
       order: 4;
-    }
-
-    &--yarn {
-      order: 1;
     }
 
     &--rocket {
