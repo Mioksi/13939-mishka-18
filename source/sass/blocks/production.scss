@@ -4,6 +4,8 @@
 
 .production__wrapper {
   position: relative;
+  max-width: 360px;
+  margin: 0 auto;
 }
 
 .production__title {
@@ -35,6 +37,11 @@
     background-repeat: no-repeat;
     background-position: 0 0;
   }
+}
+
+.production__title-decor {
+  display: block;
+  max-width: 160px;
 }
 
 .production__video {
@@ -82,6 +89,8 @@
   .production__wrapper {
     display: flex;
     flex-direction: column;
+    width: 668px;
+    max-width: none;
   }
 
   .production__video {
@@ -107,6 +116,10 @@
     }
   }
 
+  .production__title-decor {
+    max-width: none;
+  }
+
   .production__text {
     margin-bottom: 35px;
 
@@ -120,6 +133,10 @@
     margin-bottom: 105px;
   }
 
+  .production__wrapper {
+    width: auto;
+  }
+
   .production__video {
     position: absolute;
     top: 0;
@@ -131,6 +148,8 @@
     margin-left: auto;
     padding-left: 76px;
     width: 367px;
+
+    border-left: none;
   }
 
   .production__info {

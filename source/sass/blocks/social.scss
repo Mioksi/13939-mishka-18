@@ -1,9 +1,11 @@
 .social__list {
-  @include list-reset;
-
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  padding: 0;
+  width: 148px;
+
+  list-style: none;
 }
 
 .social__item {
@@ -24,18 +26,16 @@
     @include svg-ie;
   }
 
-  &:hover .social__icon-path,
-  &:focus .social__icon-path {
+  &:hover .social__icon,
+  &:focus .social__icon {
     fill: #46c1ae;
   }
 
-  &:active .social__icon-path {
+  &:active .social__icon {
     fill: rgba(#46c1ae, 0.3);
   }
-}
 
-@media (max-width: $tablet-width) {
-  .social__list {
-    width: 148px;
+  .social__icon {
+    fill: #231f20;
   }
 }

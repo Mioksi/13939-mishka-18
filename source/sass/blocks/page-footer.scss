@@ -11,11 +11,13 @@
 
 .page-footer__social {
   margin-bottom: 21px;
-  padding-right: 55px;
   padding-bottom: 19px;
-  padding-left: 57px;
 
   border-bottom: 1px solid #e5e5e5;
+}
+
+.page-footer__social-list {
+  margin: 0 auto;
 }
 
 .page-footer__copyright {
@@ -35,30 +37,45 @@
   }
 
   .page-footer__logo {
+    display: block;
+    margin-right: auto;
+    width: 27%;
+  }
+
+  .page-footer__logo-link {
     position: relative;
 
-    display: block;
-    margin-right: 159px;
+    display: inline-block;
 
     &::before {
       @include svg-ie;
     }
 
-    &[href]:hover .page-footer__logo-img,
-    &[href]:focus .page-footer__logo-img {
+    &[href]:hover .page-footer__logo-image,
+    &[href]:focus .page-footer__logo-image {
       fill: #46c1ae;
     }
 
-    &[href]:active .page-footer__logo-img {
+    &[href]:active .page-footer__logo-image {
       fill: rgba(#46c1ae, 0.3);
     }
+  }
+
+  .page-footer__logo-image {
+    fill: #231f20;
   }
 
   .page-footer__social {
     margin: 0;
     padding: 0;
     padding-top: 9px;
+    width: 22%;
+
     border-bottom: none;
+  }
+
+  .page-footer__social-list {
+    margin: 0;
   }
 
   .page-footer__copyright {
@@ -70,5 +87,11 @@
 @media (min-width: $desktop-width) {
   .page-footer__logo {
     margin-right: 350px;
+  }
+
+  .page-footer__logo,
+  .page-footer__social,
+  .page-footer__copyright {
+    width: auto;
   }
 }

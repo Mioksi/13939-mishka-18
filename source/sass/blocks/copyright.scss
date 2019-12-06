@@ -10,8 +10,8 @@
   line-height: 18px;
   color: #000000;
 
-  &:hover .copyright__icon-path,
-  &:focus .copyright__icon-path {
+  &:hover .copyright__icon,
+  &:focus .copyright__icon {
     fill: #46c1ae;
   }
 
@@ -19,7 +19,7 @@
     color: rgba(#000000, 0.3);
   }
 
-  &:active .copyright__icon-path {
+  &:active .copyright__icon {
     fill: rgba(#46c1ae, 0.3);
   }
 }
@@ -28,4 +28,6 @@
   display: inline-block;
   vertical-align: middle;
   margin-left: 25px;
+
+  fill: #63d1bb;
 }

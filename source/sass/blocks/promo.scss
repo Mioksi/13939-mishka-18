@@ -13,7 +13,7 @@
     width: 100%;
     height: 6px;
 
-    background-image: url("../img/bg-zigzag-line.svg");
+    background-image: url("../img/svg/bg-zigzag-line.svg");
     background-size: contain;
   }
 }
@@ -72,7 +72,7 @@
 }
 
 .promo__picture {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 24px;
   width: 260px;
   height: 315px;
@@ -100,7 +100,7 @@
     &::after {
       height: 17px;
 
-      background-size: 100% 17px;
+      background-size: auto 17px;
     }
   }
 
@@ -125,12 +125,11 @@
   }
 
   .promo__info {
-    width: 291px;
+    width: 43.5%;
   }
 
   .promo__text {
     margin-bottom: 36px;
-    width: 282px;
 
     font-size: 17px;
     line-height: 30px;
@@ -183,6 +182,7 @@
 
   .promo__info {
     margin-left: 175px;
+    width: 292px;
   }
 
   .promo__title {

@@ -42,10 +42,6 @@
     border: none;
   }
 
-  .site-list__item:nth-child(2n) {
-    margin-right: 0;
-  }
-
   .site-list__link {
     font-size: 15px;
 
@@ -70,7 +66,6 @@
 
     &--sale {
       display: block;
-      margin-bottom: -56px;
       margin-right: 59px;
     }
   }
