@@ -18,11 +18,12 @@
 }
 
 .category__title {
-  margin: 0;
+  margin: 0 auto;
   padding-top: 71px;
   padding-right: 30px;
   padding-bottom: 121px;
   padding-left: 30px;
+  max-width: 375px;
   min-height: 282px;
 
   font-size: 27px;
@@ -66,6 +67,7 @@
   .category__title {
     padding-top: 153px;
     padding-bottom: 373px;
+    max-width: 668px;
     min-height: 626px;
 
     font-size: 43px;
@@ -96,6 +98,7 @@
   .category__title {
     padding-top: 151px;
     padding-bottom: 359px;
+    max-width: none;
     min-height: 0;
 
     font-size: 53px;

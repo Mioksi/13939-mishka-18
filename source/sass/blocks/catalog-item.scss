@@ -1,5 +1,6 @@
 .catalog-item {
-  width: 260px;
+  max-width: 360px;
+  margin: 0 auto;
   margin-bottom: 30px;
 
   &:hover .catalog-item__info {
@@ -27,9 +28,6 @@
   color: #000000;
 
   &--image {
-    width: 260px;
-    height: 195px;
-
     font-size: 0;
     line-height: 0;
   }
@@ -42,6 +40,10 @@
   &:active {
     color: rgba(#000000, 0.3);
   }
+}
+
+.catalog-item__image {
+  width: 100%;
 }
 
 .catalog-item__title {
@@ -94,6 +96,7 @@
     display: flex;
     margin-bottom: 54px;
     width: 100%;
+    max-width: none;
   }
 
   .catalog-item__info {
@@ -109,6 +112,7 @@
 
     &--image {
       min-width: 334px;
+      width: 334px;
       height: 334px;
     }
   }

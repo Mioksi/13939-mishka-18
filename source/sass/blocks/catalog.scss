@@ -4,19 +4,11 @@
 
 .catalog__list {
   @include list-reset;
-
-  margin: 0 auto;
-  width: 260px;
 }
 
 @media (min-width: $tablet-width) {
   .catalog {
     margin-top: 69px;
-  }
-
-  .catalog__list {
-    width: auto;
-    margin: auto;
   }
 
   .catalog__item {
