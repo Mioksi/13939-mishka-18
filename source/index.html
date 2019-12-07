@@ -11,7 +11,7 @@
       <nav class="main-navigation main-navigation--closed">
         <div class="main-navigation__wrapper container">
           <div class="main-navigation__logo logo">
-            <a class="logo__link" aria-label="Главная страница">
+            <a class="logo__link" aria-label="Главная страница интернет магазина «Мишка»">
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/svg/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
@@ -150,14 +150,14 @@
           </ul>
           <p class="reviews__toggles slider__toggles">
             <button class="reviews__toggle slider__toggle slider__toggle--left" type="button">
-              <svg class="slider__arrow" xmlns="http://www.w3.org/2000/svg" width="50" height="26.003">
-                <path d="M50 11.002H7.659l8.174-8.174L13.005 0 0 12.998l.003.003-.003.004 13.005 12.998 2.828-2.828-8.172-8.173H50z"/>
+              <svg class="slider__arrow" width="50" height="26">
+                <use xlink:href="img/svg/sprite.svg#icon-left-arrow"></use>
               </svg>
               <span class="visually-hidden">Предыдущий слайд</span>
             </button>
             <button class="reviews__toggle slider__toggle slider__toggle--right" type="button">
-              <svg class="slider__arrow" xmlns="http://www.w3.org/2000/svg" width="50" height="26.003">
-                <path d="M0 11.002h42.341l-8.175-8.174L36.995 0 50 12.998l-.004.003.004.004-13.005 12.998-2.829-2.828 8.173-8.173H0z"/>
+              <svg class="slider__arrow" width="50" height="26">
+                <use xlink:href="img/svg/sprite.svg#icon-right-arrow"></use>
               </svg>
               <span class="visually-hidden">Следующий слайд</span>
             </button>
@@ -175,13 +175,17 @@
             </div>
             <div class="contacts__item contacts__item--address">
               <span class="contacts__subtitle">адрес:</span>
-              <address class="contacts__address">г. Санкт-Петербург,<br> ул. Большая Конюшенная, д.&nbsp;19/8, офис 101</address>
+              <address class="contacts__address">г. Санкт-Петербург,<br> ул. Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис 101</address>
             </div>
           </div>
         </div>
         <div class="contacts__map" id="yandexmap">
           <div class="contacts__map-wrapper">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/webp/map-desktop@1x.webp 1x, img/webp/map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/map-tablet@1x.webp 1x, img/webp/map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/webp/map-mobile@1x.webp 1x, img/webp/map-mobile@2x.webp 2x">
+
               <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
               <img class="contacts__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Адрес нашего магазина: ул. Большая Конюшенная 19/8, офис 101, Санкт-Петербург">
@@ -196,7 +200,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
         <div class="page-footer__logo">
-          <a class="page-footer__logo-link">
+          <a class="page-footer__logo-link" aria-label="Главная страница интернет магазина «Мишка»">
             <svg class="page-footer__logo-image" width="102" height="34">
               <use xlink:href="img/svg/sprite.svg#logo-footer"></use>
             </svg>
@@ -231,9 +235,9 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
             Разработано
-            <svg class="copyright__icon" xmlns="http://www.w3.org/2000/svg" width="27" height="34">
+            <svg class="copyright__icon" width="27" height="34">
               <use xlink:href="img/svg/sprite.svg#logo-htmlacademy"></use>
             </svg>
           </a>

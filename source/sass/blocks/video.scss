@@ -1,3 +1,7 @@
+.video__wrapper {
+  position: relative;
+}
+
 .video__preview {
   width: 100%;
 }
@@ -5,15 +9,18 @@
 .video__control {
   @include pseudo;
 
-  top: 133px;
-  left: 80px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 
+  margin: auto;
   padding: 0;
   width: 101px;
   height: 77px;
 
   background-color: transparent;
-  background-image: url("../img/icon-play.svg");
+  background-image: url("../img/svg/icon-play.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   border: none;
@@ -37,21 +44,11 @@
     width: 668px;
     height: 455px;
   }
-
-  .video__control {
-    top: 189px;
-    left: 284px;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .video {
     width: 682px;
     height: 455px;
-  }
-
-  .video__control {
-    top: 190px;
-    left: 291px;
   }
 }

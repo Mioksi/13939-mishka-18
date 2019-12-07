@@ -6,6 +6,11 @@
   @include list-reset;
 }
 
+.catalog__item {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
 @media (min-width: $tablet-width) {
   .catalog {
     margin-top: 69px;
