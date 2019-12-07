@@ -11,7 +11,7 @@
       <nav class="main-navigation main-navigation--closed">
         <div class="main-navigation__wrapper container">
           <div class="main-navigation__logo logo">
-            <a class="logo__link" href="index.html" aria-label="Главная страница">
+            <a class="logo__link" href="index.html" aria-label="Главная страница интернет магазина «Мишка»">
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/svg/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
@@ -155,14 +155,20 @@
         <div class="production__wrapper">
           <h2 class="production__title"><span class="production__title-decor">Процесс производства</span></h2>
           <div class="production__video video">
-            <picture>
-              <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-              <img class="video__preview" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Процесс производства">
-            </picture>
-            <button class="video__control" type="button">
-              <span class="visually-hidden">Посмотреть видео</span>
-            </button>
+            <div class="video__wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/webp/video-desktop@1x.webp 1x, img/webp/video-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/video-tablet@1x.webp 1x, img/webp/video-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/webp/video-mobile@1x.webp 1x, img/webp/video-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <img class="video__preview" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Процесс производства">
+              </picture>
+              <button class="video__control" type="button">
+                <span class="visually-hidden">Посмотреть видео</span>
+              </button>
+            </div>
           </div>
           <div class="production__info">
             <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
@@ -174,7 +180,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
         <div class="page-footer__logo">
-          <a class="page-footer__logo-link" href="index.html">
+          <a class="page-footer__logo-link" href="index.html" aria-label="Главная страница интернет магазина «Мишка»">
             <svg class="page-footer__logo-image" width="102" height="34">
               <use xlink:href="img/svg/sprite.svg#logo-footer"></use>
             </svg>
@@ -209,9 +215,9 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
             Разработано
-            <svg class="copyright__icon" xmlns="http://www.w3.org/2000/svg" width="27" height="34">
+            <svg class="copyright__icon" width="27" height="34">
               <use xlink:href="img/svg/sprite.svg#logo-htmlacademy"></use>
             </svg>
           </a>

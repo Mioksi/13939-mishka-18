@@ -3,7 +3,6 @@
 }
 
 .production__wrapper {
-  position: relative;
   max-width: 360px;
   margin: 0 auto;
 }
@@ -33,7 +32,7 @@
     width: 32px;
     height: 32px;
 
-    background-image: url("../img/icon-video.svg");
+    background-image: url("../img/svg/icon-video.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -134,6 +133,8 @@
   }
 
   .production__wrapper {
+    position: relative;
+
     width: auto;
   }
 
