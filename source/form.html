@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Мишка: Вязание на заказ</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -120,11 +120,11 @@
               <ul class="form-order__list form-order__list--name">
                 <li class="form-order__item form-order__item--name">
                   <label class="form-order__label form-order__label--text" for="name-field">Имя:</label>
-                  <input class="form-order__input form-order__input--text" type="text" name="name" id="name-field" placeholder="Введите ваше имя*">
+                  <input class="form-order__input form-order__input--text" type="text" name="name" id="name-field" placeholder="Введите ваше имя*" required>
                 </li>
                 <li class="form-order__item form-order__item--name">
                   <label class="form-order__label form-order__label--text" for="surname-field">Фамилия:</label>
-                  <input class="form-order__input form-order__input--text form-order__input--text" type="text" name="surname" id="surname-field" placeholder="Укажите фамилию*">
+                  <input class="form-order__input form-order__input--text form-order__input--text" type="text" name="surname" id="surname-field" placeholder="Укажите фамилию*" required>
                 </li>
                 <li class="form-order__item form-order__item--name">
                   <label class="form-order__label form-order__label--text" for="patronymic-field">Отчество:</label>
@@ -138,7 +138,7 @@
               <h3 class="form-order__title form-order__title--phone">Тел</h3>
               <p class="form-order__item form-order__item--contacts">
                 <label class="form-order__label visually-hidden" for="phone-field">Ваш телефон</label>
-                <input class="form-order__input form-order__input--text form-order__input--contacts form-order__input--phone" type="tel" name="phone" id="phone-field" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                <input class="form-order__input form-order__input--text form-order__input--contacts form-order__input--phone" type="tel" name="phone" id="phone-field" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="\+?[0-9\s]+" required>
                 <svg class="form-order__icon form-order__icon--phone" width="25" height="24">
                   <use xlink:href="img/svg/sprite.svg#icon-phone"></use>
                 </svg>
@@ -148,7 +148,7 @@
               <h3 class="form-order__title form-order__title--email">E-mail</h3>
               <p class="form-order__item form-order__item--contacts form-order__item--email">
                 <label class="form-order__label visually-hidden" for="email-field">Ваш email</label>
-                <input class="form-order__input form-order__input--text form-order__input--contacts" type="email" name="email" id="email-field" placeholder="Ваш Email*">
+                <input class="form-order__input form-order__input--text form-order__input--contacts" type="email" name="email" id="email-field" placeholder="Ваш Email*" required>
                 <svg class="form-order__icon form-order__icon--mail" width="32" height="32">
                   <use xlink:href="img/svg/sprite.svg#icon-mail"></use>
                 </svg>
@@ -208,8 +208,8 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright copyright" aria-label="HTML Academy">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
             Разработано
             <svg class="copyright__icon" width="27" height="34">
               <use xlink:href="img/svg/sprite.svg#logo-htmlacademy"></use>
@@ -218,7 +218,7 @@
         </div>
       </div>
     </footer>
-    <script src="js/picturefill.js"></script>
+    <script src="js/picturefill.min.js"></script>
     <script src="js/svg4everybody.min.js"></script>
     <script src="js/script.js"></script>
   </body>
