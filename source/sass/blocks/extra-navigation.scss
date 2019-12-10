@@ -1,0 +1,29 @@
+.extra-navigation__list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 710px;
+}
+
+.extra-navigation__item {
+  margin-right: 62px;
+}
+
+.extra-navigation__link {
+  display: block;
+  padding: 16px 0;
+
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: rgba(#000000, 0.6);
+  }
+
+  &[href]:active {
+    color: rgba(#000000, 0.3);
+  }
+}
