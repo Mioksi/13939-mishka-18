@@ -25,6 +25,7 @@
 
   background-color: transparent;
   border: none;
+
   cursor: pointer;
 }
 
@@ -90,6 +91,11 @@
 
   .main-navigation--nojs .main-navigation__toggle {
     display: none;
+  }
+
+  .main-navigation--nojs .main-navigation__list--site-list,
+  .main-navigation--nojs .main-navigation__list--user-list {
+    display: block;
   }
 }
 
