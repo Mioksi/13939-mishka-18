@@ -9,8 +9,10 @@
   padding-bottom: 9px;
   padding-left: 37px;
 
-  border: 1px solid #ececec;
   background-color: transparent;
+  border: 1px solid #ececec;
+
+  cursor: pointer;
 
   &--left {
     border-right: none;

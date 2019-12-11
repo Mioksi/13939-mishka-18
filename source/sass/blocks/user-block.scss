@@ -1,15 +1,13 @@
-.user-list__item {
+.user-block__item {
   border-bottom: 1px solid #ececec;
 }
 
-.user-list__link {
+.user-block__wrapper {
+  display: flex;
+}
+
+.user-block__link {
   position: relative;
-
-  &::before {
-    @include svg-ie;
-
-    z-index: 1;
-  }
 
   display: block;
   padding-top: 26px;
@@ -22,6 +20,12 @@
   line-height: 24px;
   color: #000000;
 
+  &::before {
+    @include svg-ie;
+
+    z-index: 1;
+  }
+
   &[href]:hover,
   &[href]:focus {
     color: rgba(#000000, 0.6);
@@ -31,17 +35,17 @@
     color: rgba(#000000, 0.3);
   }
 
-  &[href]:hover .user-list__icon,
-  &[href]:focus .user-list__icon {
+  &[href]:hover .user-block__icon,
+  &[href]:focus .user-block__icon {
     fill: #63d1bb;
   }
 
-  &[href]:active .user-list__icon {
+  &[href]:active .user-block__icon {
     fill: rgba(#63d1bb, 0.3);
   }
 }
 
-.user-list__icon {
+.user-block__icon {
   position: absolute;
 
   fill: rgba(#231f20, 0.2);
@@ -58,13 +62,13 @@
 }
 
 @media (min-width: $tablet-width) {
-  .user-list {
+  .user-block {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  .user-list__item {
+  .user-block__item {
     border: none;
 
     &--decor {
@@ -73,7 +77,7 @@
     }
   }
 
-  .user-list__link {
+  .user-block__link {
     &--search {
       padding-top: 36px;
       padding-right: 32px;
@@ -91,7 +95,7 @@
     }
   }
 
-  .user-list__icon {
+  .user-block__icon {
     &--search {
       position: relative;
 
@@ -107,13 +111,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .user-list__link {
-    &--search {
-      padding-bottom: 24px;
-    }
-
+  .user-block__link {
     &--cart {
-      padding-bottom: 30px;
+      padding-bottom: 33px;
     }
   }
 }

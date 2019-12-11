@@ -64,13 +64,12 @@
 
   background-color: #63d1bb;
   border: none;
+
   cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
-  .form-cart__input {
-    + .form-cart__label {
-      width: 112px;
-    }
+  .form-cart__input + .form-cart__label {
+    width: 112px;
   }
 }

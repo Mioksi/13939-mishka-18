@@ -1,187 +1,80 @@
-.main-navigation__wrapper {
-  position: relative;
-
-  padding: 0;
-}
-
-.main-navigation__logo {
-  padding: 50px;
-  padding-top: 22px;
-  padding-bottom: 13px;
-
-  text-align: center;
-
-  border-bottom: 1px solid #ececec;
-}
-
-.main-navigation__toggle {
-  position: absolute;
-  top: 25px;
-  right: 29px;
-
-  padding: 0;
-  width: 25px;
-  height: 30px;
-
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.main-navigation--closed .main-navigation__toggle::before {
-  @include pseudo;
-
-  top: 7px;
-  left: 3px;
-
-  width: 20px;
-  height: 2px;
-
-  background-color: #221f1f;
-  box-shadow: 0 6px 0 0 #221f1f, 0 12px 0 0 #221f1f;
-}
-
-.main-navigation--opened .main-navigation__toggle {
-  &::before,
-  &::after {
-    @include pseudo;
-
-    top: 13px;
-    left: 0;
-
-    width: 27px;
-    height: 2px;
-
-    background-color: #221f1f;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-}
-
 .main-navigation__list {
   @include list-reset;
 }
 
+.main-navigation__item {
+  border-bottom: 1px solid #ececec;
+}
+
 .main-navigation__link {
-  margin: 0 auto;
-  width: 320px;
-}
+  display: block;
+  padding-top: 26px;
+  padding-right: 56px;
+  padding-bottom: 28px;
+  padding-left: 75px;
 
-.main-navigation__text {
-  display: none;
-}
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
 
-@media (max-width: $mobile-width-only) {
-  .main-navigation--closed .main-navigation__list--site-list,
-  .main-navigation--closed .main-navigation__list--user-list {
-    display: none;
+  &[href]:hover,
+  &[href]:focus {
+    color: rgba(#000000, 0.6);
   }
 
-  .main-navigation--opened .main-navigation__list--site-list,
-  .main-navigation--opened .main-navigation__list--user-list {
-    display: block;
-  }
-
-  .main-navigation--nojs .main-navigation__toggle {
-    display: none;
+  &[href]:active {
+    color: rgba(#000000, 0.3);
   }
 }
 
 @media (min-width: $tablet-width) {
-  .main-navigation {
-    border-bottom: 1px solid rgba(68, 68, 68, 0.1);
-  }
-
-  .main-navigation__wrapper {
+  .main-navigation__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
-    padding: 0 6.5%;
+    width: 100%;
   }
 
-  .main-navigation__logo {
-    margin: 0;
-    padding-right: 0;
-    padding-left: 0;
-    padding-bottom: 11px;
-    width: 30%;
+  .main-navigation__item {
+    margin-right: 35px;
 
-    text-align: left;
-
-    border-bottom: none;
+    border: none;
   }
 
   .main-navigation__link {
-    margin: 0;
-    width: auto;
-  }
-
-  .main-navigation__toggle {
-    display: none;
-  }
-
-  .main-navigation__list--site-list {
-    position: relative;
-    z-index: 1;
-
-    order: 2;
-    margin-bottom: -60px;
-  }
-
-  .main-navigation__list--user-list {
-    order: 1;
-    margin-left: auto;
-  }
-
-  .main-navigation__text {
-    position: relative;
-    z-index: 1;
-
-    display: block;
-    order: 3;
-    margin: 0;
-    margin-left: auto;
-    margin-bottom: -60px;
+    padding: 0;
     padding-top: 18px;
     padding-bottom: 18px;
 
-    line-height: 24px;
+    font-size: 15px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-navigation__wrapper {
-    padding: 0 50px;
+  .main-navigation__list {
+    width: 410px;
   }
 
-  .main-navigation__logo {
-    padding-top: 9px;
-    padding-bottom: 0;
-    width: auto;
+  .main-navigation__item {
+    margin: 0;
+
+    border-right: 1px solid rgba(68, 68, 68, 0.1);
+
+    &--decor {
+      border-right: none;
+    }
   }
 
-  .main-navigation__list--site-list {
-    order: -1;
-    margin-right: 40px;
-    margin-bottom: -56px;
-  }
+  .main-navigation__link {
+    padding-top: 31px;
+    padding-right: 35px;
+    padding-bottom: 33px;
 
-  .main-navigation__list--user-list {
-    z-index: 0;
+    font-size: 17px;
 
-    order: 1;
-  }
-
-  .main-navigation__text {
-    margin-bottom: -56px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    &--desktop {
+      padding-left: 34px;
+    }
   }
 }
