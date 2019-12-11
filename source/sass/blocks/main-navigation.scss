@@ -4,10 +4,6 @@
 
 .main-navigation__item {
   border-bottom: 1px solid #ececec;
-
-  &--sale {
-    display: none;
-  }
 }
 
 .main-navigation__link {
@@ -47,11 +43,11 @@
   }
 
   .main-navigation__link {
-    font-size: 15px;
-
     padding: 0;
     padding-top: 18px;
     padding-bottom: 18px;
+
+    font-size: 15px;
   }
 }
 
@@ -62,35 +58,23 @@
 
   .main-navigation__item {
     margin: 0;
+
     border-right: 1px solid rgba(68, 68, 68, 0.1);
 
     &--decor {
       border-right: none;
-    }
-
-    &--sale {
-      display: block;
-      margin-right: 59px;
     }
   }
 
   .main-navigation__link {
     padding-top: 31px;
     padding-right: 35px;
-    padding-bottom: 35px;
+    padding-bottom: 33px;
 
     font-size: 17px;
 
     &--desktop {
       padding-left: 34px;
-    }
-
-    &--sale {
-      padding-top: 16px;
-      padding-right: 0;
-      padding-bottom: 16px;
-
-      font-size: 15px;
     }
   }
 }

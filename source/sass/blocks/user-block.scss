@@ -9,12 +9,6 @@
 .user-block__link {
   position: relative;
 
-  &::before {
-    @include svg-ie;
-
-    z-index: 1;
-  }
-
   display: block;
   padding-top: 26px;
   padding-right: 56px;
@@ -25,6 +19,12 @@
   font-weight: 700;
   line-height: 24px;
   color: #000000;
+
+  &::before {
+    @include svg-ie;
+
+    z-index: 1;
+  }
 
   &[href]:hover,
   &[href]:focus {
@@ -112,12 +112,8 @@
 
 @media (min-width: $desktop-width) {
   .user-block__link {
-    &--search {
-      padding-bottom: 24px;
-    }
-
     &--cart {
-      padding-bottom: 30px;
+      padding-bottom: 33px;
     }
   }
 }

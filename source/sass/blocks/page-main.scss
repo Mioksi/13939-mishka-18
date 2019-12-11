@@ -18,7 +18,7 @@
   .page-main__wrapper {
     position: relative;
 
-    padding-top: 95px;
+    padding-top: 36px;
     padding-bottom: 90px;
 
     &::after {
@@ -43,7 +43,6 @@
 
 @media (min-width: $desktop-width) {
   .page-main__wrapper {
-    padding-top: 91px;
     padding-bottom: 119px;
 
     &::after {

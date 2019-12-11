@@ -7,8 +7,7 @@
 }
 
 .video__control {
-  @include pseudo;
-
+  position: absolute;
   top: 0;
   left: 0;
   bottom: 0;

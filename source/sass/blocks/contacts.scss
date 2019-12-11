@@ -185,11 +185,9 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    position: relative;
-
-    width: 1150px;
     margin: 0 auto;
     margin-bottom: 105px;
+    width: 1150px;
 
     &::before {
       top: 63px;
@@ -200,9 +198,8 @@
 
   .contacts__wrapper {
     padding: 0;
-
     padding-left: 225px;
-    padding-right: 50px;
+    width: 560px;
   }
 
   .contacts__title {
@@ -221,12 +218,10 @@
   }
 
   .contacts__item {
+    width: auto;
+
     &--email {
       margin-bottom: 30px;
-    }
-
-    &--address {
-      width: 300px;
     }
   }
 

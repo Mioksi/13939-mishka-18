@@ -25,6 +25,7 @@
 
   background-color: transparent;
   border: none;
+
   cursor: pointer;
 }
 
@@ -100,8 +101,11 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    height: 89px;
-    border-bottom: 1px solid rgba(68, 68, 68, 0.1);
+    background-image: linear-gradient(to bottom, #ffffff 88px, rgba(68, 68, 68, 0.1) 88px, rgba(68, 68, 68, 0.1) 89px, #f9f9f9 0);
+
+    &--inner {
+      background-image: linear-gradient(to bottom, #ffffff 88px, rgba(68, 68, 68, 0.1) 88px, rgba(68, 68, 68, 0.1) 89px, #f1f1f1 0);
+    }
   }
 
   .page-header__wrapper {
@@ -117,7 +121,6 @@
     padding-right: 0;
     padding-left: 0;
     padding-bottom: 11px;
-    width: 30%;
 
     text-align: left;
 
